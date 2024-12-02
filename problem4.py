@@ -33,3 +33,30 @@ that is an obtuse triangle
 
 
 """
+
+import math
+a = input("enter a number for a triangle side length:")
+b = input("enter a number for a triangle side length:")
+c = input("enter a number for a triangle side length:")
+a = float(a)
+b = float(b)
+c = float(c)
+a2 = a**0.5
+b2 = b**0.5
+c2 = c**0.5
+
+
+if a==(((b**2)+(c**2))**0.5) or b==(((a**2)+(c**2))**0.5) or c==(((b**2)+(a**2))**0.5):
+    print("that is a right triangle")
+elif a>c and a>b and (a2)>(b2+c2):
+    print("that is an obtuse triangle")
+elif b>c and b>a and (b2)>(a2+c2):
+    print("that is an obtuse triangle")
+elif c>a and c>b and (c2)>(b2+a2):
+    print("that is an obtuse triangle")
+elif a>c and a>b and (a2)<(b2+c2):
+    print("that is an acute triangle")
+elif b>c and b>a and (b2)<(a2+c2):
+    print("that is an acute triangle")
+elif c>a and c>b and (c2)<(b2+a2): 
+    print("that is an acute triangle")

@@ -31,3 +31,15 @@ Enter a number: 10000
 
 
 """
+
+n = input("Type a number:")
+n = float(n)
+
+if n >= 1000:
+    print("3")
+elif 1000 > n >= 100:
+    print("2")
+elif 100 > n >= 10:
+    print("1")
+elif 10 > n >= 0:
+    print("0")
